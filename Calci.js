@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll(".btn");
 const themeToggle = document.getElementById("themeToggle");
 const body = document.getElementById("body");
 
-let currentTheme = "dark";
+let currentTheme = "light";
 let expression = "";
 
 buttons.forEach(btn => {
@@ -58,3 +58,4 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+
