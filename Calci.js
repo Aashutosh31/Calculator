@@ -3,7 +3,7 @@ const buttons = document.querySelectorAll(".btn");
 const themeToggle = document.getElementById("themeToggle");
 const body = document.getElementById("body");
 
-let currentTheme = "light";
+let currentTheme = "dark";
 let expression = "";
 
 buttons.forEach(btn => {
@@ -48,8 +48,8 @@ document.addEventListener("keydown", (e) => {
 
 // Theme toggle
 themeToggle.addEventListener("click", () => {
-  if (currentTheme === "light-theme") {
-    body.classList.add("dark");
+  if (currentTheme === "dark") {
+    body.classList.add("light-theme");
     currentTheme = "light";
     themeToggle.textContent = "☀️";
   } else {
@@ -58,5 +58,6 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+
 
 
