@@ -48,8 +48,8 @@ document.addEventListener("keydown", (e) => {
 
 // Theme toggle
 themeToggle.addEventListener("click", () => {
-  if (currentTheme === "dark") {
-    body.classList.add("light-theme");
+  if (currentTheme === "light-theme") {
+    body.classList.add("dark");
     currentTheme = "light";
     themeToggle.textContent = "☀️";
   } else {
@@ -58,4 +58,5 @@ themeToggle.addEventListener("click", () => {
     themeToggle.textContent = "🌙";
   }
 });
+
 
