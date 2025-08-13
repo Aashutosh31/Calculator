@@ -1,0 +1,68 @@
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3);
+}
+
+.display {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.btn {
+  padding: 16px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  background: linear-gradient(145deg, rgba(255,255,255,0.15), rgba(255,255,255,0.05));
+  box-shadow: 0 6px rgba(0,0,0,0.3);
+  transition: all 0.15s ease, background 0.3s ease;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.4), 0 0 10px rgba(255,255,255,0.2);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px rgba(0,0,0,0.2);
+}
+
+.op {
+  background: linear-gradient(145deg, #ff9f43, #ff6b6b);
+}
+
+.eq {
+  background: linear-gradient(145deg, #1dd1a1, #10ac84);
+}
+
+/* Light Theme */
+.light-theme {
+  background: linear-gradient(to bottom right, #ffecd2, #fcb69f) !important;
+}
+
+.light-theme .glass {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.light-theme .display {
+  background: rgba(0,0,0,0.1);
+  color: black;
+}
+
+.light-theme .btn {
+  background: linear-gradient(145deg, rgba(0,0,0,0.1), rgba(0,0,0,0.05));
+  color: black;
+}
+
+.light-theme .op {
+  background: linear-gradient(145deg, #ff7e5f, #feb47b);
+}
+
+.light-theme .eq {
+  background: linear-gradient(145deg, #43cea2, #185a9d);
+}

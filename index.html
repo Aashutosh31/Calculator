@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3D Gradient Calculator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../CSS/Calci.css" />
+</head>
+<body id="body" class="flex items-center justify-center min-h-screen bg-gradient-to-br from-purple-800 via-indigo-700 to-blue-800 transition-colors duration-500">
+  <div class="calculator glass rounded-2xl p-6 w-[400px]">
+    <div class="flex justify-between items-center mb-4">
+      <h1 class="text-3xl font-bold text drop-shadow-md">Calculator</h1>
+      <button id="themeToggle" class="bg-gradient-to-r from-pink-500 to-orange-500 text-white px-3 py-1 rounded-lg shadow-md hover:scale-105 transition">🌙</button>
+    </div>
+    <input type="text" id="display" class="display w-full p-4 mb-6 text-right text-2xl rounded-lg shadow-inner focus:outline-none" readonly>
+    <div class="grid grid-cols-4 gap-4">
+      <button class="btn op">AC</button>
+      <button class="btn op">C</button>
+      <button class="btn op">%</button>
+      <button class="btn op">/</button>
+
+      <button class="btn num">7</button>
+      <button class="btn num">8</button>
+      <button class="btn num">9</button>
+      <button class="btn op">*</button>
+
+      <button class="btn num">4</button>
+      <button class="btn num">5</button>
+      <button class="btn num">6</button>
+      <button class="btn op">-</button>
+
+      <button class="btn num">1</button>
+      <button class="btn num">2</button>
+      <button class="btn num">3</button>
+      <button class="btn op">+</button>
+
+      <button class="btn num col-span-2">0</button>
+      <button class="btn num">.</button>
+      <button class="btn eq">=</button>
+    </div>
+  </div>
+
+  <script src="../Java Script/Calci.js"></script>
+</body>
+</html>
